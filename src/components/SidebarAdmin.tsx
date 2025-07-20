@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { useLocation } from 'react-router-dom';
 
-const SidebarAdmin: React.FC = ({ isSidebarOpen }) => {
-  const [toggle, setToggle] = useState(false);
+interface SidebarAdminProps {
+  isSidebarOpen: boolean;
+}
+
+const SidebarAdmin: React.FC<SidebarAdminProps> = ({ isSidebarOpen }) => {
   const location = useLocation();
-  const navigate = useNavigate();
 
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -19,9 +21,9 @@ const SidebarAdmin: React.FC = ({ isSidebarOpen }) => {
       >
         <div className="h-full overflow-y-auto py-4">
           <nav className="space-y-2 px-4">
-            <a
-              href="#"
-              className={`flex items-center rounded-lg ${isActive('/administrator/dashboard') ? 'bg-[#EA222B] text-white' : 'text-gray-700 hover:bg-gray-100'} px-4 py-3 transition-colors duration-200`}
+            <button
+              type="button"
+              className={`flex w-full items-center rounded-lg ${isActive('/administrator/dashboard') ? 'bg-[#EA222B] text-white' : 'text-gray-700 hover:bg-gray-100'} px-4 py-3 transition-colors duration-200`}
             >
               <svg className="mr-3 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
@@ -38,10 +40,10 @@ const SidebarAdmin: React.FC = ({ isSidebarOpen }) => {
                 />
               </svg>
               Dashboard
-            </a>
-            <a
-              href="#"
-              className={`flex items-center rounded-lg ${isActive('/administrator/event') ? 'bg-[#EA222B] text-white' : 'text-gray-700 hover:bg-gray-100'} px-4 py-3 transition-colors duration-200`}
+            </button>
+            <button
+              type="button"
+              className={`flex w-full items-center rounded-lg ${isActive('/administrator/event') ? 'bg-[#EA222B] text-white' : 'text-gray-700 hover:bg-gray-100'} px-4 py-3 transition-colors duration-200`}
             >
               <svg className="mr-3 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
@@ -52,10 +54,10 @@ const SidebarAdmin: React.FC = ({ isSidebarOpen }) => {
                 />
               </svg>
               Data Event
-            </a>
-            <a
-              href="#"
-              className={`flex items-center rounded-lg ${isActive('/administrator/pengurus') ? 'bg-[#EA222B] text-white' : 'text-gray-700 hover:bg-gray-100'} px-4 py-3 transition-colors duration-200`}
+            </button>
+            <button
+              type="button"
+              className={`flex w-full items-center rounded-lg ${isActive('/administrator/pengurus') ? 'bg-[#EA222B] text-white' : 'text-gray-700 hover:bg-gray-100'} px-4 py-3 transition-colors duration-200`}
             >
               <svg className="mr-3 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
@@ -66,7 +68,7 @@ const SidebarAdmin: React.FC = ({ isSidebarOpen }) => {
                 />
               </svg>
               Data Pengurus
-            </a>
+            </button>
           </nav>
         </div>
       </aside>

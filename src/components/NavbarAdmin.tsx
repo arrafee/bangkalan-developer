@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
-import logo from '@assets/images/logo/logo.png';
-import { useLocation, useNavigate } from 'react-router-dom';
 
-const NavbarAdmin: React.FC = ({ isSidebarOpen, setIsSidebarOpen }) => {
+interface NavbarAdminProps {
+  isSidebarOpen: boolean;
+  setIsSidebarOpen: (isOpen: boolean) => void;
+}
+
+const NavbarAdmin: React.FC<NavbarAdminProps> = ({ isSidebarOpen, setIsSidebarOpen }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [toggle, setToggle] = useState(false);
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  const isActive = (path: string) => {
-    return location.pathname === path;
-  };
 
   return (
     <>
@@ -18,6 +14,8 @@ const NavbarAdmin: React.FC = ({ isSidebarOpen, setIsSidebarOpen }) => {
         <div className="flex items-center justify-between px-4 py-3 lg:px-6">
           <div className="flex items-center">
             <button
+              type="button"
+              aria-label="Toggle sidebar"
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
               className="mr-4 rounded-lg p-2 text-gray-600 hover:bg-gray-100 lg:hidden"
             >
@@ -35,6 +33,7 @@ const NavbarAdmin: React.FC = ({ isSidebarOpen, setIsSidebarOpen }) => {
 
           <div className="relative">
             <button
+              type="button"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               className="flex items-center rounded-lg p-2 text-gray-600 hover:bg-gray-100"
             >
@@ -49,7 +48,7 @@ const NavbarAdmin: React.FC = ({ isSidebarOpen, setIsSidebarOpen }) => {
 
             {isDropdownOpen && (
               <div className="absolute right-0 mt-2 w-48 rounded-lg bg-white py-2 shadow-xl">
-                <a href="#" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                <button type="button" className="flex w-full items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                   <svg className="mr-3 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
@@ -65,8 +64,8 @@ const NavbarAdmin: React.FC = ({ isSidebarOpen, setIsSidebarOpen }) => {
                     />
                   </svg>
                   Pengaturan
-                </a>
-                <a href="#" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                </button>
+                <button type="button" className="flex w-full items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                   <svg className="mr-3 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
@@ -76,7 +75,7 @@ const NavbarAdmin: React.FC = ({ isSidebarOpen, setIsSidebarOpen }) => {
                     />
                   </svg>
                   Keluar
-                </a>
+                </button>
               </div>
             )}
           </div>

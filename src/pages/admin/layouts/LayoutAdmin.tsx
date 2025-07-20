@@ -2,7 +2,11 @@ import NavbarAdmin from '@components/NavbarAdmin';
 import SidebarAdmin from '@components/SidebarAdmin';
 import React, { useState } from 'react';
 
-const LayoutAdmin: React.FC<{ component: React.ReactNode }> = ({ component }) => {
+interface LayoutAdminProps {
+  component: React.ReactNode;
+}
+
+const LayoutAdmin: React.FC<LayoutAdminProps> = ({ component }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   return (
