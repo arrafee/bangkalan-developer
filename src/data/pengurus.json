@@ -1,0 +1,147 @@
+[{
+        "divisi": "BPH",
+        "personil": [{
+                "nama": "Iskandar Sholeh",
+                "jabatan": "Founder",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729186256/IskandarSholeh-1693371149_vsrgqi.jpg"
+            },
+            {
+                "nama": "Ajeng Cahyaning Prameswari",
+                "jabatan": "Co-Founder",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729187045/Ajeng_Cahyaning_Prameswari_hcwlfe.png    "
+            },
+            {
+                "nama": "Emilia Kamila",
+                "jabatan": "Sekretaris",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729187045/Emilia_Kamila_x8x5ct.jpg"
+            },
+            {
+                "nama": "Isa Rahmawati",
+                "jabatan": "Bendahara",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729186256/Isa_Rahmawati__ezfrip.jpg"
+            }
+        ]
+    },
+    {
+        "divisi": "Graphic Designer",
+        "personil": [{
+                "nama": "Mochamad Alghifary",
+                "jabatan": "Co-Graphic Designer",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729187049/Mochamad_Alghifary_yjxoan.jpg"
+            },
+            {
+                "nama": "Medina Kaulan Sadida",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729187046/Medina_Kaulan_Sadida_socbqs.jpg"
+            },
+            {
+                "nama": "Retno Hestiningrum",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729186266/Retno_Hestiningrum_cfyni2.png"
+            },
+            {
+                "nama": "Achmad Irwansyah",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
+            },
+            {
+                "nama": "Humam Afif Al-Mahbubi",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
+            }
+        ]
+    },
+    {
+        "divisi": "Copywriter",
+        "personil": [{
+                "nama": "Alvin Suwarno Putra",
+                "jabatan": "Co-Copywriter",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
+            },
+            {
+                "nama": "Putri Faza",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729187051/Putri_Faza_zggayf.jpg"
+            },
+            {
+                "nama": "Hananda Gagas G",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
+            },
+            {
+                "nama": "Fanky Abdilqoyyim",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
+            }
+        ]
+    },
+    {
+        "divisi": "Developer",
+        "personil": [{
+                "nama": "Nur Maulana Arrafi",
+                "jabatan": "Co-Developer",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729186257/Nur_Maulana_Arrafi_gwtfvi.jpg"
+            },
+            {
+                "nama": "Adela Dewi Fortuna Putry",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729187045/ADELA_DEWI_FORTUNA_PUTRY_qumr9m.jpg"
+            },
+            {
+                "nama": "M. Putra Senja Kaimana",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
+            },
+            {
+                "nama": "Arthur Darwanto",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729187269/Arthur_Darwanto.jpg"
+            },
+            {
+                "nama": "Muzammil",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
+            },
+            {
+                "nama": "Octavian Pashya Ramadhan",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729187270/Octavian_Pashya_Ramadhan.jpg"
+            }
+        ]
+    },
+    {
+        "divisi": "Event Management",
+        "personil": [{
+                "nama": "Nur Wulan Maudini",
+                "jabatan": "Co-Event Management",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729187067/Nur_Wulan_Maudini_sopj8n.png"
+            },
+            {
+                "nama": "Kusuma Gigih Prakoso",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
+            }
+        ]
+    }
+]

@@ -1,0 +1,72 @@
+.box {
+  background-color: #EA222B;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  color: #fff;
+  height: 281px;
+  padding: 12px 40px;
+  width: 330px;
+
+  @media (min-width: 320px) {
+    height: 346px;
+    padding: 12px 22px;
+    width: 300px;
+  }
+
+  @media (min-width: 768px) {
+    height: 346px;
+    padding: 12px 22px;
+    width: 300px;
+  }
+
+  @media (min-width: 1024px) {
+   height: 281px;
+   padding: 12px 40px;
+   width: 330px;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 500;
+
+    @media (min-width: 320px) {
+      font-size: 18px;
+    }
+  
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+
+  .divider {
+    border: 1px solid #fff;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    width: 100%;
+
+    @media (min-width: 320px) {
+      margin-bottom: 0.2em;
+
+    }
+  
+    @media (min-width: 768px) {
+      margin-bottom: 0.2em;
+
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .list {
+    font-size: 14px;
+    font-weight: 300;
+    list-style: disc;
+  }
+}

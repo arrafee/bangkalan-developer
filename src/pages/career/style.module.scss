@@ -1,0 +1,473 @@
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  height: max-content;
+  justify-content: center;
+  padding: 3rem 0;
+  width: 100%;
+
+  .description {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    .title {
+      color: #EA222B;
+      font-size: 40px;
+      font-weight: 500;
+      text-align: center;
+      width: 90%;
+
+      @media (min-width: 320px) { // Tablet and wider
+        font-size: 30px;
+      }
+      @media (min-width: 768px) { // Tablet and wider
+        font-size: 30px;
+      }
+    
+      @media (min-width: 1024px) { // Wide monitor
+        color: #EA222B;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        width: 90%;
+      }
+    }
+
+    .sub {
+      color: black;
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 1rem;
+      text-align: center;
+      width: 43%;
+
+      @media (min-width: 320px) { // Tablet and wider
+        font-size: 16px;
+        text-align: justify;
+        width: 80%;
+      }
+      @media (min-width: 768px) { // Tablet and wider
+        font-size: 16px;
+        text-align: justify;
+        width: 80%;
+      }
+    
+      @media (min-width: 1024px) { // Wide monitor
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 1rem;
+        text-align: center;
+        width: 43%; 
+      }
+    }
+  }
+
+  .position {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4rem;
+    padding: 0 100px;
+    width: 100%;
+
+    @media (min-width: 320px) { // Tablet and wider
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 2rem;
+      padding: 0 20px;
+      width: 100%;
+    }
+
+    @media (min-width: 768px) { // Tablet and wider
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 4rem;
+      padding: 0 22px;
+      width: 100%;
+    }
+  
+    @media (min-width: 1024px) { // Wide monitor
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 4rem;
+      padding: 0 100px;
+      width: 100%;
+    }
+
+    .illustration {
+      width: 50%;
+
+      @media (min-width: 320px) { // Tablet and wider
+        width: 100%;
+      }
+
+      @media (min-width: 768px) { // Tablet and wider
+        width: 55%;
+      }
+    
+      @media (min-width: 1024px) { // Wide monitor
+        width: 50%;  
+      }
+    }
+
+    .pos {
+      width: 45%;
+
+      @media (min-width: 320px) { // Tablet and wider
+        width: 100%;
+      }
+
+      @media (min-width: 768px) { // Tablet and wider
+        width: 65%;
+      }
+    
+      @media (min-width: 1024px) { // Wide monitor
+        width: 45%;  
+      }
+
+      .description {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .title {
+          color: black;
+          font-size: 32px;
+          font-weight: bold;
+          text-align: left;
+
+          @media (min-width: 320px) { // Tablet and wider
+            font-size: 28px;
+          }
+          @media (min-width: 768px) { // Tablet and wider
+            font-size: 28px;
+          }
+        
+          @media (min-width: 1024px) { // Wide monitor
+            color: black;
+            font-size: 34px;
+            font-weight: bold;
+            text-align: left;  
+          }
+        }
+
+        .divider {
+          border: 3px solid #EA222B;
+          color: #EA222B;
+          margin-bottom: 1em;
+          margin-top: 1em;
+          width: 15%;
+        }
+
+        .sub {
+          font-size: 14px;
+          text-align: left;
+          width: 100%;
+        }
+
+        .cards {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 16px;
+          justify-content: space-around;
+          margin-top: 2em;
+          width: 90%;
+
+          @media (min-width: 320px) {
+            align-items: center; // Tablet and wider
+            flex-direction: column; 
+            margin-top: 1em;
+            width: 100%;
+          }
+
+          @media (min-width: 768px) {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2px;
+            justify-content: space-around;
+            margin-top: 1em;
+            width: 100%;
+          }
+        
+          @media (min-width: 1024px) { // Wide monitor
+            align-items: flex-start;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: space-around;
+            margin-top: 2em;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  .term {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+    row-gap: 20px;
+    width: 100%;
+     
+    @media (min-width: 320px) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 2rem;
+      row-gap: 10px;
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 2rem;
+      row-gap: 16px;
+      width: 100%;
+    }
+
+    @media (min-width: 1024px) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 4rem;
+      row-gap: 20px;
+      width: 100%;
+    }    
+
+    .title {
+      color: black;
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+
+      @media (min-width: 320px) {
+        font-size: 28px;
+      }
+  
+      @media (min-width: 768px) {
+        font-size: 28px;
+      }
+
+      @media (min-width: 1024px) {
+        font-size: 32px;
+      }
+    }
+
+    .content {
+      align-items: center;
+      column-gap: 32px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+
+      @media (min-width: 320px) {
+         column-gap: 4px;
+      }
+  
+      @media (min-width: 768px) {
+         column-gap: 20px;
+      }
+    }
+  }
+
+  .banner {
+    align-items: center;
+    background-color: #EA222B;
+    display: flex;
+    // justify-content: center;
+    padding: 24px 10px;
+    width: 100%;
+    z-index: 2;
+
+    @media (min-width: 320px) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 18px 6px;
+      width: 100%;
+      z-index: 2;
+    }
+
+    @media (min-width: 768px) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 18px 6px;
+      width: 100%;
+      z-index: 2;
+    }
+
+    @media (min-width: 1024px) {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 18px 6px;
+      width: 100%;
+      z-index: 2;
+    }
+
+    .text-container {
+      align-items: center;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      row-gap: 2em;
+      text-align: center;
+      width: 100%;
+
+      @media (min-width: 320px) {
+        row-gap: 0.5em;
+      }
+
+      @media (min-width: 768px) {
+        row-gap: 0.5em;
+      }
+
+      @media (min-width: 1024px) {
+        row-gap: 2em;
+      }
+    }
+
+    .img-container {
+      width: 100%;
+
+      @media (min-width: 320px) {
+        margin-top: 1.3rem;
+      }
+
+      @media (min-width: 768px) {
+        margin-top: 1.3rem;
+      }
+
+      .img-stack {
+        padding-left: 4em;
+        position: relative;
+        width: 100%;
+
+        .img1 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 40%; // this is an arbitrary width, depends on the design
+          z-index: -1;
+
+          @media (min-width: 320px) {
+            width: 35%;
+          }
+          
+          @media (min-width: 768px) {
+            width: 35%;
+          }
+
+          @media (min-width: 1024px) {
+            width: 40%;
+          }
+        }
+
+        .img2 {
+          padding-left: 4em;
+          padding-top: 6em; // arbitrary value
+          width: 80%; // arbitrary value
+          z-index: 98;
+
+          @media (min-width: 320px) {
+            padding-left: 2em;
+            padding-top: 4em; 
+            width: 70%;
+          }
+          
+          @media (min-width: 768px) {
+            padding-left: 2em;
+            padding-top: 4em; 
+            width: 70%;
+          }
+
+          @media (min-width: 1024px) {
+            padding-left: 4em;
+            padding-top: 6em; // arbitrary value
+            width: 80%; // arbitrary value
+            z-index: 98;
+          }
+        }
+
+        .img3 {
+          margin-left: 20em;
+          margin-top: -5em; // arbitrary value
+          width: 45%; // arbitrary value
+          z-index: 99;
+
+          @media (min-width: 320px) {
+            margin-left: 12em;
+            margin-top: -4em; 
+            width: 40%;
+          }
+          
+          @media (min-width: 768px) {
+            margin-left: 13em;
+            margin-top: -4em; 
+            width: 40%;
+          }
+
+          @media (min-width: 1024px) {
+            margin-left: 20em;
+            margin-top: -5em;
+            width: 40%;
+          }
+        }
+      }
+    }
+  
+  }
+
+  @media (min-width: 320px) { // Tablet and wider
+    padding: 3rem 0;
+    row-gap: 4rem;
+  }
+
+  @media (min-width: 768px) { // Tablet and wider
+    padding: 3rem 0;
+    row-gap: 4rem;
+  }
+
+  @media (min-width: 1024px) { // Wide monitor
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    height: max-content;
+    justify-content: center;
+    padding: 3rem 0;
+    width: 100%;
+  }
+}

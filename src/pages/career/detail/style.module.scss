@@ -1,0 +1,22 @@
+.container {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  padding: 4em 10em;
+  width: 100%;
+
+  .description {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .form-section {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+name: cd
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  cd:
+    runs-on: Ubuntu-22.04
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+       
+    - name: Install Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 20
+
+     - name: Deploy Using ssh
+       uses: appleboy/ssh-action@master
+       with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /home/bangkalandev/bangdev-landing/
+            git pull --force origin main
+            git status
+            npm install
+            npm run build
