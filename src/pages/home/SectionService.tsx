@@ -43,20 +43,20 @@ const SectionService: React.FC = () => {
       content:
         'Desain kreatif adalah kunci dalam membangun brand yang kuat. Kami menawarkan jasa desain UI/UX yang menarik dan mudah dinavigasi, menjamin pengalaman pengguna terbaik.',
     },
-    {
-      id: 4,
-      title: 'Joki Tugas',
-      img: imgService4,
-      content:
-        'Kesulitan dalam menyelesaikan tugas Anda? Kami siap membantu dengan layanan joki tugas yang cepat dan berkualitas, memastikan hasil yang memuaskan.',
-    },
-    {
-      id: 5,
-      title: 'Joki Skripsi',
-      img: imgService5,
-      content:
-        'Bimbingan menyeluruh untuk skripsi Anda! Layanan joki skripsi kami menyediakan panduan dan dukungan untuk menyelesaikan tugas akhir dengan tepat waktu.',
-    },
+    // {
+    //   id: 4,
+    //   title: 'Joki Tugas',
+    //   img: imgService4,
+    //   content:
+    //     'Kesulitan dalam menyelesaikan tugas Anda? Kami siap membantu dengan layanan joki tugas yang cepat dan berkualitas, memastikan hasil yang memuaskan.',
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Joki Skripsi',
+    //   img: imgService5,
+    //   content:
+    //     'Bimbingan menyeluruh untuk skripsi Anda! Layanan joki skripsi kami menyediakan panduan dan dukungan untuk menyelesaikan tugas akhir dengan tepat waktu.',
+    // },
   ];
 
   return (
