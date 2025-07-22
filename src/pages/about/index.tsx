@@ -21,8 +21,12 @@ const AboutPage: React.FC = () => {
     { src: imgActivity5, alt: 'Activity 5' },
   ];
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
+    <div className="min-h-screen scroll-smooth bg-gradient-to-br from-gray-50 via-white to-gray-100">
       <section className="relative overflow-hidden bg-gradient-to-r from-[#EA222B] to-red-600 py-20" id="about-us">
         <div className="absolute inset-0">
           <div className="absolute -right-1/4 -top-1/4 h-96 w-96 rounded-full bg-white opacity-10" />
@@ -84,7 +88,7 @@ const AboutPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-4 rounded-xl bg-gray-50 p-6">
+              {/* <div className="grid grid-cols-3 gap-4 rounded-xl bg-gray-50 p-6">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-[#EA222B]">100+</div>
                   <div className="text-sm text-gray-600">Members</div>
@@ -97,7 +101,7 @@ const AboutPage: React.FC = () => {
                   <div className="text-2xl font-bold text-[#EA222B]">25+</div>
                   <div className="text-sm text-gray-600">Events</div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

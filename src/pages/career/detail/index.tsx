@@ -6,8 +6,11 @@ import logo from '@assets/images/logo/logo.png';
 import style from './style.module.scss';
 
 const DetailCareerPage: React.FC = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className={style.container}>
+    <div className={`${style.container} scroll-smooth`}>
       <div className={style.description}>
         <img width="20%" src={logo} alt="logo" />
         <span className="text-2xl font-semibold">Magang UI/UX</span>

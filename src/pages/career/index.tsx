@@ -30,8 +30,12 @@ const CareerPage: React.FC = () => {
     'Peluang jaringan profesional yang luas.',
   ];
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className={style.wrapper}>
+    <div className={`${style.wrapper} scroll-smooth`}>
       <div className={style.description}>
         <span className={style.title}>Mau Magang? di Bangkalan Developer aja</span>
         <p className={style.sub}>

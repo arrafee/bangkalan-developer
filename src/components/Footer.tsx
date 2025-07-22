@@ -2,7 +2,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaLinkedin, FaInstagramSquare, FaTelegram } from 'react-icons/fa';
-import logo from '@assets/images/logo/logo.png';
+import logo from '@assets/images/logo-png.png';
 
 const Footer: React.FC = () => {
   const _navigate = useNavigate();

@@ -9,6 +9,10 @@ const DetailEventPage: React.FC = () => {
   const navigate = useNavigate();
   const event = dataEvent.find((item) => item.slug === slug);
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   if (!event) {
     return (
       <div className="flex min-h-screen items-center justify-center">
@@ -26,7 +30,7 @@ const DetailEventPage: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
+    <div className="min-h-screen scroll-smooth bg-gradient-to-br from-gray-50 via-white to-gray-100">
       <div className="relative overflow-hidden bg-gradient-to-r from-[#EA222B] to-red-600 py-20">
         <div className="absolute inset-0">
           <div className="absolute -right-1/4 -top-1/4 h-96 w-96 rounded-full bg-white opacity-10" />

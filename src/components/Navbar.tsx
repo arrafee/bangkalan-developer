@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '@assets/images/logo/logo.png';
+import logo from '@assets/images/logo-png.png';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar: React.FC = () => {

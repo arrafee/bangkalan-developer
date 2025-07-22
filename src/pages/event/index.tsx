@@ -10,6 +10,11 @@ const EventPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredEvents, setFilteredEvents] = useState(dataEvent);
 
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -29,7 +34,7 @@ const EventPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
+    <div className="min-h-screen scroll-smooth bg-gradient-to-br from-gray-50 via-white to-gray-100">
       <div className="relative overflow-hidden bg-gradient-to-r from-[#EA222B] to-red-600 py-20">
         <div className="absolute inset-0">
           <div className="absolute -right-1/4 -top-1/4 h-96 w-96 rounded-full bg-white opacity-10" />
@@ -83,7 +88,7 @@ const EventPage: React.FC = () => {
         </div>
       </div>
 
-      <div className="relative mx-auto -mt-16 max-w-7xl px-6 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-6 pt-12 lg:px-8">
         {searchTerm && (
           <div className="mb-8 rounded-2xl bg-white p-6 shadow-lg">
             <div className="flex items-center justify-between">
@@ -115,7 +120,7 @@ const EventPage: React.FC = () => {
           </div>
         )}
 
-        <div className="grid gap-8 pb-16 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 pb-16 sm:gap-6 md:grid-cols-1 lg:grid-cols-3">
           {filteredEvents.length > 0 ? (
             filteredEvents.map((item) => (
               <div key={item.id} className="group relative">
@@ -126,25 +131,27 @@ const EventPage: React.FC = () => {
                     <img
                       src={item.pamflet}
                       alt={item.nama_event}
-                      className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                      className="h-32 w-full object-cover transition-transform duration-300 group-hover:scale-110 sm:h-48"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-                    <div className="absolute right-3 top-3 rounded-full bg-black/50 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                    {/* <div className="absolute right-2 top-2 rounded-full bg-black/50 px-2 py-1 text-xs font-medium text-white backdrop-blur-sm sm:right-3 sm:top-3 sm:px-3 sm:py-1">
                       {item.tanggal_posting}
-                    </div>
+                    </div> */}
                   </div>
 
-                  <div className="p-6">
-                    <h3 className="mb-3 line-clamp-2 text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-[#EA222B]">
+                  <div className="p-3 sm:p-6">
+                    <h3 className="mb-2 line-clamp-1 text-base font-bold text-gray-900 transition-colors duration-300 group-hover:text-[#EA222B] sm:mb-3 sm:text-xl">
                       {item.nama_event}
                     </h3>
 
-                    <p className="mb-4 line-clamp-2 text-sm text-gray-600">{item.excerp}</p>
+                    {/* <p className="mb-3 line-clamp-2 hidden text-xs text-gray-600 sm:mb-4 sm:text-sm lg:block">
+                      {item.excerp}
+                    </p> */}
 
-                    <div className="space-y-3">
-                      <div className="flex items-center text-sm text-gray-500">
-                        <MdDateRange className="mr-2 h-4 w-4 text-[#EA222B]" />
+                    <div className="space-y-2 sm:space-y-3">
+                      <div className="flex items-center text-xs text-gray-500 sm:text-sm">
+                        <MdDateRange className="mr-2 h-3 w-3 text-[#EA222B] sm:h-4 sm:w-4" />
                         <div>
                           <p className="font-medium">
                             {item.tanggal_selesai ? `${item.tanggal} - ${item.tanggal_selesai}` : item.tanggal}
@@ -155,19 +162,19 @@ const EventPage: React.FC = () => {
                         </div>
                       </div>
 
-                      <div className="flex items-start text-sm text-gray-500">
-                        <IoLocation className="mr-2 mt-0.5 h-4 w-4 text-[#EA222B]" />
+                      <div className="flex items-start text-xs text-gray-500 sm:text-sm">
+                        <IoLocation className="mr-2 mt-0.5 h-3 w-3 text-[#EA222B] sm:h-4 sm:w-4" />
                         <div className="flex-1">
                           <p className="line-clamp-1 font-medium">{item.lokasi}</p>
                         </div>
                       </div>
                     </div>
 
-                    <div className="mt-6">
+                    <div className="mt-4 sm:mt-6">
                       <button
                         type="button"
                         onClick={() => navigate(`/event/${item.slug}`)}
-                        className="group/btn inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-[#EA222B] to-red-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                        className="group/btn inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-[#EA222B] to-red-600 px-4 py-2 text-xs font-semibold text-white shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg sm:px-6 sm:py-3 sm:text-sm"
                       >
                         <span>Selengkapnya</span>
                         <svg

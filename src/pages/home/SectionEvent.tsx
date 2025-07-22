@@ -75,8 +75,8 @@ const SectionEvent: React.FC = () => {
             <div className="relative" data-aos="fade-up" data-aos-delay="200">
               {/* Background card with gradient */}
               <div className="rounded-3xl bg-gradient-to-r from-[#EA222B] to-red-600 p-1 shadow-2xl">
-                <div className="rounded-3xl bg-white p-8">
-                  <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="rounded-3xl bg-white p-4 sm:p-8">
+                  <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-1 lg:grid-cols-3">
                     {dataEvent.map((item, index) => (
                       <div key={item.id} className="group relative" data-aos="fade-up" data-aos-delay={300 + index * 100}>
                         <div className="absolute -inset-2 rounded-2xl bg-gradient-to-r from-[#EA222B] to-red-600 opacity-0 blur transition-all duration-300 group-hover:opacity-20" />
@@ -103,7 +103,7 @@ const SectionEvent: React.FC = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-3" data-aos="fade-up" data-aos-delay="600">
+          {/* <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-3" data-aos="fade-up" data-aos-delay="600">
             <div className="flex flex-col items-center rounded-xl bg-white/50 p-6 shadow-lg backdrop-blur-sm">
               <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-[#EA222B] to-red-600 text-white shadow-lg">
                 <span className="text-xl">📅</span>
@@ -127,7 +127,7 @@ const SectionEvent: React.FC = () => {
               <span className="text-2xl font-bold text-[#EA222B]">4.8</span>
               <span className="text-sm text-gray-600">Rating Event</span>
             </div>
-          </div>
+          </div> */}
 
           {/* Call to Action */}
           <div className="mt-16 text-center" data-aos="fade-up" data-aos-delay="800">
