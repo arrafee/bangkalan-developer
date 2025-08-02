@@ -71,9 +71,19 @@ const AboutPage: React.FC = () => {
                   <div className="mt-2 h-2 w-2 rounded-full bg-[#EA222B]" />
                   <p className="text-lg leading-relaxed">
                     <span className="font-semibold text-gray-900">Bangkalan Developer</span> adalah komunitas teknologi yang
-                    berfokus pada pengembangan skill, kolaborasi, dan inovasi di bidang IT. Didirikan oleh para penggiat
-                    teknologi, komunitas ini hadir untuk menghubungkan developer, desainer, dan profesional IT lainnya dalam
-                    sebuah ekosistem yang mendukung pertumbuhan dan berbagi ilmu.
+                    berfokus pada pengembangan skill, kolaborasi, dan inovasi di bidang IT. Didirikan pada tanggal 14
+                    Februari 2023 oleh para penggiat teknologi, komunitas ini hadir untuk menghubungkan developer, desainer,
+                    dan profesional IT lainnya dalam sebuah ekosistem yang mendukung pertumbuhan dan berbagi ilmu.
+                  </p>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <div className="mt-2 h-2 w-2 rounded-full bg-[#EA222B]" />
+                  <p className="text-lg leading-relaxed">
+                    Sebagai komunitas yang berdiri secara <b>mandiri</b> dan <b>independen</b>, Bangkalan Developer tidak
+                    berada di bawah bagian dari struktur komunitas manapun di Madura. Sejak awal kehadirannya, Bangkalan
+                    Developer justru menjadi salah satu pelopor yang turut menginspirasi lahirnya komunitas-komunitas
+                    teknologi lainnya di berbagai wilayah <b>Madura</b>.
                   </p>
                 </div>
 

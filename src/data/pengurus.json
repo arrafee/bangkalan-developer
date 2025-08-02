@@ -29,8 +29,14 @@
     {
         "divisi": "Graphic Designer",
         "personil": [{
-                "nama": "Mochamad Alghifary",
+                "nama": "Humam Afif Al-Mahbubi",
                 "jabatan": "Co-Graphic Designer",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1754146958/afif_kspnid.jpg"
+            },
+            {
+                "nama": "Mochamad Alghifary",
+                "jabatan": "Anggota",
                 "asal": "Bangkalan, Jawa Timur",
                 "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729187049/Mochamad_Alghifary_yjxoan.jpg"
             },
@@ -48,12 +54,6 @@
             },
             {
                 "nama": "Achmad Irwansyah",
-                "jabatan": "Anggota",
-                "asal": "Bangkalan, Jawa Timur",
-                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
-            },
-            {
-                "nama": "Humam Afif Al-Mahbubi",
                 "jabatan": "Anggota",
                 "asal": "Bangkalan, Jawa Timur",
                 "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
@@ -106,7 +106,7 @@
                 "nama": "M. Putra Senja Kaimana",
                 "jabatan": "Anggota",
                 "asal": "Bangkalan, Jawa Timur",
-                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1754146956/putra_oxdsrw.jpg"
             },
             {
                 "nama": "Arthur Darwanto",
