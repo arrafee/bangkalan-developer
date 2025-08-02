@@ -8,6 +8,18 @@ const DetailEventPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const event = dataEvent.find((item) => item.slug === slug);
+  const style: { a: React.CSSProperties } = {
+    a: {
+      wordBreak: 'break-word',
+      overflowWrap: 'break-word',
+      whiteSpace: 'normal',
+      wordWrap: 'break-word',
+      textOverflow: 'clip',
+      textAlign: 'left',
+      textDecoration: 'none',
+      textTransform: 'none',
+    },
+  };
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -138,8 +150,9 @@ const DetailEventPage: React.FC = () => {
               </div>
 
               <div
-                className="prose prose-lg prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-[#EA222B] prose-strong:text-gray-900 max-w-none"
-                dangerouslySetInnerHTML={{ __html: event.body as string }}
+                className="prose prose-lg prose-headings:text-gray-900 prose-a:text-red-600 prose-strong:text-gray-900 prose-img:rounded-lg max-w-none"
+                style={style.a}
+                dangerouslySetInnerHTML={{ __html: event.body }}
               />
 
               <div className="mt-12 flex flex-col gap-4 border-t border-gray-200 pt-8 sm:flex-row">

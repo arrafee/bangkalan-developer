@@ -69,16 +69,10 @@
                 "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
             },
             {
-                "nama": "Putri Faza",
-                "jabatan": "Anggota",
-                "asal": "Bangkalan, Jawa Timur",
-                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729187051/Putri_Faza_zggayf.jpg"
-            },
-            {
                 "nama": "Hananda Gagas G",
                 "jabatan": "Anggota",
                 "asal": "Bangkalan, Jawa Timur",
-                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1754152240/hananda_g8p0ix.jpg"
             },
             {
                 "nama": "Fanky Abdilqoyyim",
@@ -141,6 +135,12 @@
                 "jabatan": "Anggota",
                 "asal": "Bangkalan, Jawa Timur",
                 "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729236509/6481225432795d8cdf48f0f85800cf66_kdfh2z.jpg"
+            },
+            {
+                "nama": "Putri Faza",
+                "jabatan": "Anggota",
+                "asal": "Bangkalan, Jawa Timur",
+                "foto": "https://res.cloudinary.com/drbvzgs1r/image/upload/v1729187051/Putri_Faza_zggayf.jpg"
             }
         ]
     }
