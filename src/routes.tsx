@@ -9,6 +9,8 @@ import DetailEventPage from '@pages/event/detail';
 import HomePage from '@pages/home';
 import LoginPage from '@pages/login';
 import ServicePage from '@pages/service';
+import PrizeBox from '@pages/games/PrizeBox';
+import SpinWheels from '@pages/games/SpinWheels';
 import { RouteObject } from 'react-router-dom';
 
 export default [
@@ -54,5 +56,13 @@ export default [
   {
     path: '/administrator/dashboard',
     element: <LayoutAdmin component={<AdminDashboard />} />,
+  },
+  {
+    path: '/games/prize-box',
+    element: <Layout component={<PrizeBox />} />,
+  },
+  {
+    path: '/games/spin-wheel',
+    element: <Layout component={<SpinWheels />} />,
   },
 ] as RouteObject[];
