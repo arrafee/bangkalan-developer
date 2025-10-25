@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import logoIcon from '@assets/images/logo-icon.png';
 
 interface SpinWheelsProps {
   className?: string;
@@ -185,7 +186,7 @@ const SpinWheels: React.FC<SpinWheelsProps> = ({ className = '' }) => {
                       }}
                     >
                       <span className="text-center text-xs font-semibold leading-tight" style={{ color: prize.textColor }}>
-                        {prize.name}
+                        {/* {prize.name} */}
                       </span>
                     </div>
                   </div>
@@ -194,8 +195,8 @@ const SpinWheels: React.FC<SpinWheelsProps> = ({ className = '' }) => {
             </div>
 
             {/* Center Circle */}
-            <div className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white/50 bg-gradient-to-br from-white to-gray-200 shadow-xl">
-              <div className="h-3 w-3 animate-pulse rounded-full bg-gradient-to-br from-yellow-400 to-orange-500" />
+            <div className="absolute left-1/2 top-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white/50 bg-gradient-to-br from-white to-gray-200 shadow-xl">
+              <img src={logoIcon} alt="Logo" className="h-12 w-12 object-contain" />
             </div>
 
             {/* Pointer */}
