@@ -12,6 +12,7 @@ import ServicePage from '@pages/service';
 import PrizeBox from '@pages/games/PrizeBox';
 import SpinWheels from '@pages/games/SpinWheels';
 import { RouteObject } from 'react-router-dom';
+import SpinWheelsNew from '@pages/games/SpinWheelsNew';
 
 export default [
   // Home
@@ -64,5 +65,9 @@ export default [
   {
     path: '/games/spin-wheel',
     element: <Layout component={<SpinWheels />} />,
+  },
+  {
+    path: '/games/spin-wheel-game',
+    element: <Layout component={<SpinWheelsNew />} />,
   },
 ] as RouteObject[];
